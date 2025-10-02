@@ -1,0 +1,259 @@
+/* estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/* header */
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+
+/* sección izquierda */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* artículo texto principal */
+.text-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* título principal */
+.title-primary h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* párrafo */
+.parrafo p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* botón */
+.bottom a {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    width: max-content;
+}
+
+/* artículo tarjeta */
+.card {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+/* contenido de la tarjeta */
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* contenido izquierdo */
+.content-left,
+.content-rigth {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* contenido superior */
+.content-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-top h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.content-top p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* línea divisora */
+.line {
+    text-align: center;
+}
+
+.line img {
+    width: 100%;
+    height: auto;
+}
+
+/* sección derecha */
+.right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* contenido izquierdo de la derecha */
+.contentleft-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* estrella */
+.star {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.img-star {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.img-star img {
+    width: 30px;
+    height: auto;
+}
+
+.p-star {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* imagen izquierda */
+.imgleft {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* contenido derecho de la derecha */
+.contentleft-rigth {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* imágenes derecha */
+.imgrigth1,
+.imgrigth2,
+.imgrigth3 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* media queries para responsividad */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    .left {
+        order: 2;
+    }
+    .right {
+        order: 1;
+    }
+    .title-primary h1 {
+        font-size: 2.2rem;
+    }
+    .parrafo p {
+        font-size: 1rem;
+    }
+    .bottom a {
+        width: 100%;
+        text-align: center;
+    }
+    .content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .content-left,
+    .content-rigth {
+        flex: none;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .contentleft-left,
+    .contentleft-rigth {
+        flex: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .title-primary h1 {
+        font-size: 1.8rem;
+    }
+    .parrafo p {
+        font-size: 0.9rem;
+    }
+    .bottom a {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+    .content-top h2 {
+        font-size: 1.5rem;
+    }
+    .content-top p {
+        font-size: 0.8rem;
+    }
+    .p-star {
+        font-size: 0.8rem;
+    }
+    .main {
+        padding: 1rem;
+    }
+    .card {
+        padding: 1rem;
+    }
+}
