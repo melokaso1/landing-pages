@@ -1,0 +1,236 @@
+/* estilos globales */
+body {
+   background-color: #f0f0f0;
+   font-family: 'Poppins', sans-serif; /* Fuente principal para el cuerpo */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+   color: #333;
+   padding: 2rem;
+}
+
+/* contenedor principal */
+.page-container {
+   background-color: #ffffff;
+   padding: 2.5rem;
+   max-width: 13000px;
+   width: 100%;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch; 
+}
+
+/* título principal */
+.main-title {
+   font-family: 'Lora', serif; 
+   font-size: 3.5rem;
+   font-weight: 400;
+   margin: 0 0 2rem 0;
+   line-height: 1.2;
+   text-align: left; 
+}
+
+/* subtítulo principal */
+.main-title .outline {
+   font-style: italic;
+   color: transparent;
+   -webkit-text-stroke: 1px black; 
+}
+
+/* contenido principal */
+.main-content {
+   display: grid;
+   grid-template-columns: 40% 60%; 
+   gap: 3rem;
+}
+
+/* columna izquierda */
+.left-column {
+   display: flex;
+   flex-direction: column;
+}
+
+/* imagen principal */
+.image-main-placeholder img {
+   width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover;
+   aspect-ratio: 3 / 4;
+}
+
+/* bloque de texto */
+.text-block {
+   margin-top: 2rem;
+}
+
+/* párrafo de texto */
+.text-block p {
+   font-size: 0.9rem;
+   line-height: 1.6;
+   color: #555;
+   margin-bottom: 2rem;
+}
+
+/* botón de registro */
+.signup-btn {
+   background-color: #000000;
+   color: #ffffff;
+   border: none;
+   padding: 12px 30px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+/* hover del botón de registro */
+.signup-btn:hover {
+   background-color: #333;
+}
+
+/* columna derecha */
+.right-column {
+   display: flex;
+   flex-direction: column;
+}
+
+/* tarjeta de estadísticas */
+.stats-card {
+   border: 1px solid #ddd;
+   border-radius: 15px;
+   padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+   position: relative;
+   margin-top: 0; 
+}
+
+/* logo circular */
+.circle-logo {
+   position: absolute;
+   top: -25px; 
+   left: 30px; 
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* icono de corazón */
+.heart {
+   font-size: 20px;
+   color: #000;
+}
+
+/* cuadrícula de estadísticas */
+.stats-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+   text-align: center;
+}
+
+/* número de estadística */
+.stat-item .stat-number {
+   display: block;
+   font-size: 1.75rem;
+   font-weight: bold;
+   color: #000;
+}
+
+/* etiqueta de estadística */
+.stat-item .stat-label {
+   font-size: 0.8rem;
+   color: #777;
+}
+
+/* galería de imágenes */
+.gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+   margin-top: 2rem;
+}
+
+/* imagen de galería */
+.image-gallery-placeholder img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+/* estilos responsivos para tablets y móviles */
+@media (max-width: 768px) {
+   .page-container {
+      padding: 1.5rem;
+   }
+
+   .main-title {
+      font-size: 2.5rem;
+   }
+
+   .main-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+   }
+
+   .left-column {
+      order: 2;
+   }
+
+   .right-column {
+      order: 1;
+   }
+
+   .stats-card {
+      padding: 2rem 1rem 1rem 1rem;
+   }
+
+   .circle-logo {
+      left: 20px;
+   }
+
+   .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+   }
+
+   .gallery {
+      grid-template-columns: 1fr;
+   }
+}
+
+/* estilos responsivos para móviles pequeños */
+@media (max-width: 480px) {
+   .main-title {
+      font-size: 2rem;
+   }
+
+   .text-block p {
+      font-size: 0.8rem;
+   }
+
+   .signup-btn {
+      padding: 10px 25px;
+      font-size: 0.9rem;
+   }
+
+   .stat-item .stat-number {
+      font-size: 1.5rem;
+   }
+
+   .stat-item .stat-label {
+      font-size: 0.75rem;
+   }
+}
