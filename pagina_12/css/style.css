@@ -1,0 +1,239 @@
+/* estilos globales */
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+/* sección texto principal */
+.text-primary {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 65px;
+    top: 144.33px;
+    width: 637px;
+    height: 414px;
+    gap: 32px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+}
+
+.parrafo {
+    width: 519px;
+    height: 99px;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.title-primary {
+    width: 637px;
+    height: 264px;
+    font-size: 72px;
+}
+
+/* botón */
+.bottom a {
+    width: 182px;         
+    height: 66px;         
+    background: #000000;    
+    border-radius: 36px;   
+    padding: 0 24px;       
+    border: none;
+    color: white;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    text-decoration: none;
+}
+
+/* formas decorativas */
+.shape {
+    left: 142px;
+    top: 91px;
+    width: 1210px;
+    height: 866.88px;
+}
+
+.img-wave {
+    width: 355px;
+    height: 126px;
+    position: absolute;
+    left: 498px;
+    top: 91px;
+}
+
+.img-spiral {
+    position: absolute;
+    top: 674px;
+    left: 142px;
+    width: 133px;
+    height: 283.33px;
+}
+
+.img-start-media {
+    position: absolute;
+    left: 596px;
+    top: 388px;
+    width: 248px;
+    height: 248px;
+    z-index: 3;
+}
+
+.img-start-rigth {
+    position: absolute;
+    left: 1095px;
+    top: 541px;
+    width: 257px;
+    height: 257px;
+}
+
+.img-blue {
+    position: absolute;
+    left: 1063px;
+    top: 67px;
+    width: 316px;
+    height: 436px;
+}
+
+.img-media {
+    position: absolute;
+    left: 723px;
+    top: 282px;
+    width: 316px;
+    height: 436px;
+}
+
+.img-lower {
+    position: absolute;
+    left: 383px;
+    top: 524px;
+    width: 316px;
+    height: 436px;
+    z-index: 1;
+}
+
+/* sección derecha */
+.rigth {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    position: absolute;
+    left: 715px;
+    top: 838px;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+}
+
+/* sección review */
+.review {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    border: 1px solid red;
+    position: absolute;
+    right: 65px;
+    top: 838px;
+}
+
+.img-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-review p {
+    width: 516px;
+    height: 90px;
+    font-size: 25px;
+    margin: 0;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .text-primary {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        gap: 16px;
+        padding: 1rem;
+    }
+    .bottom a {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        padding: 0.8rem 0;
+    }
+    .shape, .img-wave, .img-spiral, .img-start-media, .img-start-rigth, .img-blue, .img-media, .img-lower {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .rigth {
+        position: relative;
+        left: auto;
+        top: auto;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .review {
+        position: relative;
+        right: auto;
+        top: auto;
+        max-width: 100%;
+        border: none;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .img-user img {
+        width: 40px;
+        height: 40px;
+    }
+    .text-review p {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, .title-primary {
+        font-size: 48px;
+    }
+    .parrafo {
+        font-size: 18px;
+    }
+    .bottom a {
+        font-size: 18px;
+    }
+    .img-user img {
+        width: 30px;
+        height: 30px;
+    }
+    .text-review p {
+        font-size: 16px;
+    }
+}
