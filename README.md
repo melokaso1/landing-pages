@@ -13,7 +13,7 @@ Cada página está diseñada con un enfoque modular, con archivos HTML, CSS y re
 ## 🌐 Enlace a la Página Web
 
 Puedes visitar la página web en vivo en el siguiente enlace:  
-🔗 [landing-pages-alejandro.netlify.app](https://landing-pages-alejandro.netlify.app/)
+🔗 [landing-pages-alejandro.netlify.app](https://landing-pages-alejandro.netlify.app/index/index.html)
 
 ## 🛠️ Stack Tecnológico
 
