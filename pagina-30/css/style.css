@@ -1,0 +1,311 @@
+/* estilos globales */
+body {
+    display: flex;
+    flex-direction: column; 
+    color: #ffffff;
+    margin: 0;
+}
+/* contenedor principal */
+.pag30 {
+    width: 1440px;
+    height: 882px;
+    background-color: #EFC356;
+}
+/* sección texto principal */
+.text-primary {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:92px;
+    top: 239px;
+    width: 600px;
+    height: 418px;
+    gap: 40px;
+    z-index: 2;
+}
+/* título principal */
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-family: "lato", serif;
+    font-weight: 600;
+    
+}
+/* párrafo principal */
+.parrafo p {
+    width: 580px;
+    height: 96px;
+    font-size: 24px;
+    margin: 0 ;
+}
+/* contenedor título principal */
+.title-primary {
+    width: 600px;
+    height: 176px;
+    
+}
+/* botón principal */
+.bottom a {
+    width: 291px;         
+    height: 66px;         
+    background: #ffffff;    
+    border-radius: 40px;   
+    padding:0px 16px;       
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+/* imagen principal */
+.img-pet {
+    width: 503px;
+    height: 664px;
+    position: absolute;
+    left: 780px;
+    top: 98px;
+    z-index: 2;
+}
+/* imagen fondo */
+.fond-pet {
+    width: 438px;
+    height: 133px;
+    position: absolute;
+    left: 796px;
+    top: 640px;
+    z-index: 1;
+}
+/* imagen pata inferior */
+.paw-bot {
+    width: 334px;
+    height: 253px;
+    position: absolute;
+    left: 198px;
+    top: 422px;
+    z-index: 1;
+}
+/* imagen pata superior */
+.paw-top {
+    width: 371px;
+    height: 279px;
+    position: absolute;
+    left: 1078px;
+    top: 0px;
+}
+/* imagen pregunta */
+.ask-img {
+    width: 179px;
+    height: 179px;
+    position: absolute;
+    left: 1168px;
+    top: 567px;
+}
+/* sección tarjetas inferiores */
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #EFEEEE;
+    color: #000000;
+    font-family: 'lato',serif;
+    width: 1190px;
+    height: 156px;
+    border-radius: 24px;
+    position: absolute;
+    left: 125px;
+    top: 804px;
+    z-index: 2;
+}
+/* caja individual */
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 318px;
+    height: 76px;
+}
+/* texto en caja */
+.box-text {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 76px;
+}
+/* imagen en caja */
+.img-card {
+    width: 76px;
+    height: 76px;
+    border-radius: 16px;
+}
+/* título en caja */
+.title-card {
+    font-family: 'lato',serif;
+    font-size: 28px;
+    margin: 0;
+}
+/* texto descriptivo */
+.text {
+    font-size: 16px;
+    margin: 0;
+}
+/* imagen hamburguesa */
+.img-hamburguer {
+    width: 1057px;
+    height: 1163px;
+    position: absolute;
+    left: 435px;
+}
+
+/* media queries para responsividad */
+@media (max-width: 768px) {
+    .pag30 {
+        width: 100%;
+        height: auto;
+        background-color: #EFC356;
+        position: relative;
+        padding: 1rem 2rem;
+    }
+    .text-primary {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 1rem 0;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .parrafo p {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+    .title-primary {
+        width: 100%;
+        height: auto;
+    }
+    .bottom a {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .img-pet {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        top: auto;
+        margin: 1rem 0;
+        z-index: 2;
+    }
+    .fond-pet,
+    .paw-bot,
+    .paw-top,
+    .ask-img {
+        display: none;
+    }
+    .card-bottom {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 1rem 0;
+        border-radius: 0;
+    }
+    .box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .box-text {
+        width: 100%;
+        height: auto;
+    }
+    .img-card {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .title-card {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .img-hamburguer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .parrafo p {
+        font-size: 16px;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .bottom a {
+        height: 45px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+    }
+    .title-card {
+        font-size: 18px;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .text {
+        font-size: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .pag30 {
+        padding: 1rem;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .text-primary {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card-bottom {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .img-pet {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
