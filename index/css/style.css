@@ -1,0 +1,91 @@
+/* estilos globales para la página índice */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #102a43;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #334e68;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #627d98;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.page-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(16, 42, 67, 0.1);
+}
+
+.page-links li {
+    border-bottom: 1px solid #d9e2ec;
+}
+
+.page-links li:last-child {
+    border-bottom: none;
+}
+
+.page-links a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #334e68;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-links a:hover,
+.page-links a:focus {
+    background-color: #334e68;
+    color: #f0f4f8;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #627d98;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .page-links ul {
+        max-width: 100%;
+    }
+}
